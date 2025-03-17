@@ -1,0 +1,31 @@
+graph TD
+    subgraph "2022年初期モデル"
+    A1[プロンプト詳細度: 低] -->|応答品質: 低| B1
+    B1[プロンプト詳細度: 中] -->|応答品質: 中| C1
+    C1[プロンプト詳細度: 高] -->|応答品質: 高| D1
+    end
+    
+    subgraph "2023年中期モデル"
+    A2[プロンプト詳細度: 低] -->|応答品質: 低～中| B2
+    B2[プロンプト詳細度: 中] -->|応答品質: 高| C2
+    C2[プロンプト詳細度: 高] -->|応答品質: 高| D2
+    end
+    
+    subgraph "2024-25年現在のモデル"
+    A3[プロンプト詳細度: 低] -->|応答品質: 中～高| B3
+    B3[プロンプト詳細度: 中] -->|応答品質: 高| C3
+    C3[プロンプト詳細度: 高] -->|応答品質: 中～高| D3["過剰指定で創造性低下"]
+    end
+    
+    style A1 fill:#FFD2D2
+    style B1 fill:#FFECD2
+    style C1 fill:#D2FFD2
+    
+    style A2 fill:#FFE8D2
+    style B2 fill:#D2FFD2
+    style C2 fill:#D2FFD2
+    
+    style A3 fill:#D2FFD2
+    style B3 fill:#D2FFD2
+    style C3 fill:#FFE8D2
+    style D3 fill:#FFD2D2

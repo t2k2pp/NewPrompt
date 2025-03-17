@@ -1,0 +1,30 @@
+flowchart LR
+    A[黎明期 2022年前半] -->|定型フレーズの時代| B[発展期 2022年後半-2023年前半]
+    B -->|構造化プロンプト| C[成熟期 2023年後半-2024年前半]
+    C -->|対話的アプローチ| D[現在 2024年後半-]
+    
+    style A fill:#FFD2D2
+    style B fill:#FFE8D2
+    style C fill:#DEFFCC
+    style D fill:#CCF2FF
+    
+    subgraph 黎明期特徴
+    A1["・魔法の呪文探し<br>・英語による長文指示<br>・固定テンプレート"]
+    end
+    
+    subgraph 発展期特徴
+    B1["・構造化プロンプト<br>・ロールプレイ<br>・Few-shot学習"]
+    end
+    
+    subgraph 成熟期特徴
+    C1["・Chain of Thought<br>・複雑な思考の分解<br>・対話的修正"]
+    end
+    
+    subgraph 現在の特徴
+    D1["・シンプルな自然言語<br>・対話を通じた発展<br>・AIの能力信頼"]
+    end
+    
+    A --- A1
+    B --- B1
+    C --- C1
+    D --- D1
